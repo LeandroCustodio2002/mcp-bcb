@@ -25,7 +25,7 @@ export default {
         versao: VERSAO,
         descricao: "Servidor MCP com dados oficiais do Banco Central do Brasil.",
         endpoint_mcp: new URL("/mcp", request.url).toString(),
-        codigo: "https://github.com/SEU_USUARIO/mcp-bcb",
+        codigo: "https://github.com/LeandroCustodio2002/mcp-bcb",
       });
     }
 
