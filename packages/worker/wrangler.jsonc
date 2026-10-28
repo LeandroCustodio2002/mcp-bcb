@@ -1,0 +1,12 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "mcp-bcb",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true }
+
+  // Cache opcional (sem ele, o Worker usa cache em memória por instância).
+  // Crie com `npx wrangler kv namespace create CACHE` e descomente com o id gerado:
+  // "kv_namespaces": [{ "binding": "CACHE", "id": "<id>" }]
+}

@@ -1,0 +1,7 @@
+packages:
+  - packages/*
+
+# Pacotes que precisam rodar script de instalação (binários nativos do bundler e do runtime da Cloudflare).
+allowBuilds:
+  esbuild: true
+  workerd: true

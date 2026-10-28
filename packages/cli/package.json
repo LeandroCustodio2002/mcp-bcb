@@ -1,0 +1,31 @@
+{
+  "name": "mcp-bcb",
+  "version": "0.1.0",
+  "description": "Servidor MCP com dados oficiais do Banco Central do Brasil: Selic, IPCA, CDI, câmbio e Boletim Focus.",
+  "keywords": ["mcp", "model-context-protocol", "banco-central", "bcb", "selic", "ipca", "cdi", "focus", "claude"],
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mcp-bcb": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc -p tsconfig.json",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
+    "decimal.js": "^10.6.0",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": {
+    "@mcp-bcb/core": "workspace:*",
+    "tsup": "^8.5.0"
+  }
+}
