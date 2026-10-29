@@ -12,7 +12,7 @@
     "test:watch": "vitest",
     "typecheck": "pnpm -r typecheck",
     "dev:worker": "pnpm --filter @mcp-bcb/worker dev",
-    "deploy:worker": "pnpm --filter @mcp-bcb/worker deploy",
+    "deploy:worker": "pnpm --filter @mcp-bcb/worker run deploy",
     "inspector": "pnpm --filter mcp-bcb build && npx @modelcontextprotocol/inspector node packages/cli/dist/index.js",
     "smoke": "pnpm --filter mcp-bcb build && node scripts/smoke.mjs"
   },
